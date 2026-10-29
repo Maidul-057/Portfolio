@@ -1,55 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Maidul Islam — Personal Portfolio
 
-First, run the development server:
+A personal portfolio website showcasing my skills, projects, education, and journey as a Computer Science and Engineering student and aspiring Full-Stack Web Developer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This portfolio presents my background, technical skills, academic journey, and web development projects in one place. It is designed to provide a clean, responsive, and accessible experience across desktop and mobile devices.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
 
-## Contact form setup (EmailJS)
+## ✨ Features
 
-The contact form sends messages through EmailJS and does not open the visitor's email application. To enable it:
+- Responsive portfolio layout
+- Personal introduction and About section
+- Technical skills showcase
+- Featured projects with repository links
+- Education timeline
+- Resume access
+- Contact section and social links
+- Light and dark theme support
+- Responsive navigation
 
-1. Create an EmailJS account and add an email service connected to the inbox that should receive messages (`maidulislamzishan@gmail.com`).
-2. Create an email template and set its **To Email** to that inbox. Set **Reply-To** to `{{reply_to}}`. Use `{{from_name}}`, `{{reply_to}}`, and `{{message}}` in the subject/body as needed. Do not let visitor-provided template fields choose the recipient.
-3. Copy `.env.example` to `.env.local` and fill in the EmailJS **Service ID**, **Template ID**, and **Public Key**:
+## 📂 Featured Projects
 
-   ```env
-   NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
-   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
-   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
+### 1. BazarDor
+
+A web project focused on exploring essential-goods prices.
+
+- [GitHub Repository](https://github.com/Maidul-057/Bazardor)
+
+### 2. Listen to Learn
+
+A vocabulary-learning project designed to support language learning.
+
+- [GitHub Repository](https://github.com/Maidul-057/Listen-to-Learn)
+
+### 3. SerialTrack
+
+A web application for managing doctor appointments and patient queues.
+
+- [GitHub Repository](https://github.com/Maidul-057/serialtrack)
+- [Live Demo](https://serialtrack-iota.vercel.app/login)
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
    ```
 
-4. Add the same variables to your hosting provider's environment settings, then redeploy. Restart the local dev server after changing `.env.local`.
-5. In EmailJS, restrict the public key to your production domain and configure its available anti-abuse protections. The form also includes a honeypot and input limits; these are basic protections, not a substitute for provider-side rate limits or CAPTCHA.
+2. Navigate to the project directory:
 
-The EmailJS public key and these `NEXT_PUBLIC_` values are intentionally exposed to the browser; never put an EmailJS private key or other secret in these variables. Until all three values are configured, the form reports that sending is unavailable and directs visitors to the displayed email address. A success message appears only after EmailJS confirms a successful send.
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
 
-## Learn More
+3. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚙️ Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If the contact form uses EmailJS, create a `.env.local` file in the project root and configure the following variables:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=
+```
+
+Fill in the values from your EmailJS dashboard before testing the contact form.
+
+**Note:** Never commit `.env.local` or private credentials to GitHub.
+
+## 📦 Build for Production
+
+Run the following command to create a production build:
+
+```bash
+npm run build
+```
+
+## 🌐 Live Website
+
+[View Portfolio](YOUR_VERCEL_URL)
+
+## 📬 Connect With Me
+
+- **GitHub:** [Maidul-057](https://github.com/Maidul-057)
+- **LinkedIn:** [Maidul Islam](https://www.linkedin.com/in/maidul-islam-zishan/)
+- **Facebook:** [Maidul Islam](https://www.facebook.com/Vanish123/)
+
+## 📄 License
+
+This project is my personal portfolio. Please contact me before reusing personal content, images, or branding.
+
+---
+
+Built with Next.js and TypeScript by Maidul Islam.
